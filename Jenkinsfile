@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/prathapk259/terraform-aks.git'
+                git branch: 'main', url: 'https://github.com/prathapk259/terraform-aks.git'
             }
         }
         stage('Terraform Init') {
